@@ -1,0 +1,57 @@
+body {
+    background-color: lightgrey;
+    margin: 0;
+    padding: 0;
+}
+
+body h2 {
+    text-align: center;
+    color: darkcyan;
+}
+
+form {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 217px;
+}
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.cancelbtn {
+    padding: 10px 18px;
+    background-color: #f44336;
+    float: right;
+}
+.cancelbtn  a:{
+    list-style-type: none;
+    text-decoration: none;
+}
+.container {
+    padding: 16px;
+    width: 70%;
+    background-color: #f1f1f1;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+span.psw {
+    display: block;
+    float: none;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
