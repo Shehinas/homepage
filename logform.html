@@ -4,24 +4,11 @@
 <head>
     <link rel="stylesheet" type="text/css" href="./logform.css">
     <link rel="stylesheet" type="text/css" href="./home.css">
-    <title>copy</title>
+    <title>Login Form</title>
 </head>
 
 <body>
-    <div class="header cf">
-        <img src="/home/shehinas/Documents/html/home/images.jpg" alt="logo" height="80px">
-        <h1>Website Home Page</h1>
-        <div class="menu">
-            <ul>
-                <li><a href="./home.html">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="file:///home/shehinas/Documents/contact%20inf">Contact</a></li>
-                    <li>
-                        <button>LogIn</button>
-                    </li>
-            </ul>
-        </div>
-    </div>
+    
     <h2>Login Form</h2>
     <form>
         <div class="container">
@@ -29,7 +16,7 @@
             <input type="text" placeholder="Enter Username" id="username" name="uname" required>
             <label><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="psw" required>
-            <button type="button" onclick="myFun()">Log In</button>
+            <button type="button" id="Login" class="popup">Log In</button>
             <input type="checkbox" checked="checked"> Remember me>
             <button type="button" class="cancelbtn"><a href="./home.html">Cancel</a></button>
         </div>
@@ -38,17 +25,14 @@
             <span class="psw">Forgot <a href="#">password?</a></span>
         </div>
     </form>
+
     <script>
     function myFun() {
         var userName = document.getElementById("username").value
         alert("Hi " + userName);
     }
     </script>
-    <footer>
-        <p>Everyone have something to share,</p>
-        <p>to learn,</p>
-        <p>and to explore</p>
-    </footer>
+    
 </body>
 
 </html>
