@@ -25,7 +25,9 @@
     vertical-align: middle;
     display: inline-block;
 }
-
+#change-to-logout{
+    display: none;
+}
 button {
     background-color: #aeb1b1;
     border-radius: 2px;
@@ -213,4 +215,12 @@ footer p {
     bottom: 0;
     right: 15px;
     font-size: 18px;
+}
+
+.show-inline-block {
+    display : inline-block;;
+}
+
+.hide {
+    display: none;
 }
