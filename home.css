@@ -1,5 +1,4 @@
-html,
-body {
+* {
     margin: 0;
     padding: 0;
 }
@@ -28,7 +27,7 @@ body {
 }
 
 button {
-    border: 1px solid black;
+    background-color: #aeb1b1;
     border-radius: 2px;
     width: 70px;
     height: 28px;
@@ -46,6 +45,7 @@ button:hover {
     position: absolute;
     top: 30px;
     right: 0;
+     margin-top: 13px;
 }
 
 .menu li {
@@ -54,6 +54,7 @@ button:hover {
     margin: 0 5px;
     padding: 4px 10px;
     background-color: #b1b1b1;
+
 }
 
 .menu li:last-child {
@@ -98,6 +99,7 @@ button:hover {
 #content {
     text-align: center;
     font-size: 30px;
+    padding-top: 16px;
 }
 
 footer {
@@ -106,7 +108,109 @@ footer {
     text-align: center;
 }
 
+footer p {
+    padding: 6px;
+}
+
 #img {
     margin-left: 3.5%;
-   
+}
+
+
+/* popup */
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+    opacity: 0;
+    overflow: auto;
+}
+
+.popup-overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #f1f1f1;
+    width: 30%;
+    position: relative;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover {
+    color: #06D85F;
+}
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+.popup button {
+    margin: 0;
+    padding: 0px;
+    width: 76px;
+    height: 35px;
+  background: rgba(0, 128, 0, 0.81);
+  float: right;
+}
+
+
+[class*='close-'] {
+  color: #777;
+  font: 14px/100% arial, sans-serif;
+  position: absolute;
+  right: 5px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #fff;
+  top: 5px;
+}
+
+.close-classic:after {
+  content: 'X'; /* ANSI X letter */
+}
+
+.close-thin:after {
+  content: '×'; /* UTF-8 symbol */
+}
+
+.close-thik:after {
+  content: 'x'; */
+    font-size: 25px;
+}
+/* popup */
+
+#user{
+    height: 20px;
+    color: black;
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    font-size: 18px;
 }

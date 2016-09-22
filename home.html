@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" type="text/css" media="all" href="./home.css">
+    <link rel="stylesheet" type="text/css" href="./logform.css">
     <title>home page</title>
 </head>
 
@@ -17,10 +18,11 @@
                     <li><a href="#">About</a></li>
                     <li><a href="file:///home/shehinas/Documents/contact%20inf">Contact</a></li>
                     <li>
-                        <button><a href="./logform.html">LogIn</a></button>
+                        <button type="button" id="change-to-logout"><a href="#login-popup">LogIn</a></button>
                     </li>
                 </ul>
             </div>
+            <span id="user"></span>
         </div>
         <p id=content><strong>What do successful websites have in common?</strong></p>
         <div id="img">
@@ -32,6 +34,26 @@
             <p>and to explore</p>
         </footer>
     </div>
+    <section id="login-popup" class="popup-overlay">
+        <div class="popup">
+            <h2>Login Form</h2>
+            <form>
+                <div class="container">
+                    <a href="#" class="close-thik"></a>
+                    <label><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" id="username" name="uname" required>
+                    <label><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <button type="button" onclick="formValidation();" class="popup">Log In</button>
+                    <button type="button" class="cancel-btn"><a href="./home.html">Cancel</a></button>
+                </div>
+                <div class="container">
+                    <span class="psw"> <a href="#">Forgot password?</a></span>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script type="text/javascript" src="./login-form-popup.js"></script>
 </body>
 
 </html>
