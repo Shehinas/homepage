@@ -2,26 +2,25 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" media="all" href="./home.css">
-    <link rel="stylesheet" type="text/css" href="./logform.css">
-    <title>home page</title>
+    <link rel="stylesheet" type="text/css" media="all" href="style/home-page.css">
+    <link rel="stylesheet" type="text/css" href="style/login-form.css">
+    <title>HOME PAGE</title>
 </head>
 
 <body>
     <div class="box">
         <div class="header cf">
-            <img src="/home/shehinas/Documents/html/home/images.jpg" alt="logo" height="80px">
+            <img src="./images/images.jpg" alt="logo" height="80px">
             <h1>Website Home Page</h1>
             <div class="menu">
                 <ul>
-                    <li><a href="file:///home/shehinas/Documents/index.html#">Home</a></li>
+                    <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="file:///home/shehinas/Documents/contact%20inf">Contact</a></li>
-                    
-                        <button type="button" id="logout-btn" class="hide">LogOut</a></button>
-                    
-                    <li>
-                        <button type="button" id="login-btn" ><a href="#login-popup">LogIn</a></button>
+                    <li><a href="#">Contact</a></li>
+                    <li class="hide" id="logoutBtn">
+                       <a href="index.html">LogOut</a>                    </li>
+                    <li id="loginBtn">
+                   <a href="#loginPopup">LogIn</a>
                     </li>
                 </ul>
             </div>
@@ -29,26 +28,26 @@
         </div>
         <p id=content><strong>What do successful websites have in common?</strong></p>
         <div id="img">
-            <img id="bodyimg" src="/home/shehinas/Documents/html/home/images (1).jpg" alt="main" ;>
-            <img id="bodyimg" src="/home/shehinas/Documents/html/home/images (2).jpg" alt="main2" ;></div>
+            <img id="bodyImg" src="./images/images (1).jpg" alt="main">
+            <img id="bodyImg" src="./images/images (2).jpg" alt="main2"></div>
         <footer>
             <p>Everyone have something to share,</p>
             <p>to learn,</p>
             <p>and to explore</p>
         </footer>
     </div>
-    <section id="login-popup" class="popup-overlay">
+    <section id="loginPopup" class="popup_overlay">
         <div class="popup">
             <h2>Login Form</h2>
             <form>
                 <div class="container">
-                    <a href="#" class="close-thik"></a>
+                    <a href="#" class="close_button"></a>
                     <label><b>Username</b></label>
                     <input type="text" placeholder="Enter Username" id="username" name="uname" required>
                     <label><b>Password</b></label>
                     <input type="password" placeholder="Enter Password" id="password" name="psw" required>
                     <button type="button" onclick="formValidation();" class="popup">Log In</button>
-                    <button type="button" class="cancel-btn"><a href="./home.html">Cancel</a></button>
+                    <button type="button" class="cancel_btn"><a href="./home.html">Cancel</a></button>
                 </div>
                 <div class="container">
                     <span class="psw"> <a href="#">Forgot password?</a></span>
@@ -56,7 +55,7 @@
             </form>
         </div>
     </section>
-    <script type="text/javascript" src="./login-form-popup.js"></script>
+    <script type="text/javascript" src="./script/login-form-popup.js"></script>
 </body>
 
 </html>

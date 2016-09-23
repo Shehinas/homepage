@@ -25,9 +25,11 @@
     vertical-align: middle;
     display: inline-block;
 }
-#change-to-logout{
+
+#change_to_logout {
     display: none;
 }
+
 button {
     background-color: #aeb1b1;
     border-radius: 2px;
@@ -47,7 +49,7 @@ button:hover {
     position: absolute;
     top: 30px;
     right: 0;
-     margin-top: 13px;
+    margin-top: 13px;
 }
 
 .menu li {
@@ -56,12 +58,10 @@ button:hover {
     margin: 0 5px;
     padding: 4px 10px;
     background-color: #b1b1b1;
-
 }
 
-.menu li:last-child {
-    background-color: transparent;
-    color: black;
+.menu li a:last-child {
+    padding-right: 10px;
 }
 
 .menu li a {
@@ -79,7 +79,7 @@ button:hover {
     color: white;
 }
 
-#bodyimg {
+#bodyImg {
     display: inline-block;
     padding: 1em;
     height: 377px;
@@ -121,7 +121,7 @@ footer p {
 
 /* popup */
 
-.popup-overlay {
+.popup_overlay {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -133,7 +133,7 @@ footer p {
     overflow: auto;
 }
 
-.popup-overlay:target {
+.popup_overlay:target {
     visibility: visible;
     opacity: 1;
 }
@@ -179,36 +179,39 @@ footer p {
     padding: 0px;
     width: 76px;
     height: 35px;
-  background: rgba(0, 128, 0, 0.81);
-  float: right;
+    background: rgba(0, 128, 0, 0.81);
+    float: right;
+}
+
+[class*='close_'] {
+    color: #777;
+    font: 14px/100% arial, sans-serif;
+    position: absolute;
+    right: 5px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #fff;
+    top: 5px;
+}
+
+.close_classic:after {
+    content: 'X';
+    /* ANSI X letter */
+}
+
+.close_thin:after {
+    content: '×';
+    /* UTF-8 symbol */
+}
+
+.close_button:after {
+    content: 'x';
+    */ font-size: 25px;
 }
 
 
-[class*='close-'] {
-  color: #777;
-  font: 14px/100% arial, sans-serif;
-  position: absolute;
-  right: 5px;
-  text-decoration: none;
-  text-shadow: 0 1px 0 #fff;
-  top: 5px;
-}
-
-.close-classic:after {
-  content: 'X'; /* ANSI X letter */
-}
-
-.close-thin:after {
-  content: '×'; /* UTF-8 symbol */
-}
-
-.close-thik:after {
-  content: 'x'; */
-    font-size: 25px;
-}
 /* popup */
 
-#user{
+#user {
     height: 20px;
     color: black;
     position: absolute;
@@ -217,10 +220,15 @@ footer p {
     font-size: 18px;
 }
 
-.show-inline-block {
-    display : inline-block;;
+.show_inline_block {
+    display: inline-block;
 }
 
-.hide {
+.menu li.hide {
     display: none;
+}
+
+ #logoutBtn a{
+    text-decoration: none;
+    color: #5f5456;
 }
