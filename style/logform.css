@@ -1,5 +1,5 @@
-#login-popup input[type=text],
-#login-popup input[type=password] {
+#loginPopup input[type=text],
+#loginPopup input[type=password] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -8,35 +8,35 @@
     box-sizing: border-box;
 }
 
-#login-popup .cancel-btn {
+#loginPopup .cancel_btn {
     padding: 10px 18px;
     background-color: rgba(251, 22, 5, 0.62);
     float: right;
     margin-right: 10px;
 }
 
-#login-popup .container {
+#loginPopup .container {
     padding: 16px;
     background-color: #f1f1f1;
 }
 
-#login-popup span.psw {
+#loginPopup span.psw {
     float: right;
     padding-top: 16px;
 }
 
-#login-popup span.psw {
+#loginPopup span.psw {
     display: block;
     float: none;
 }
 
-#login-popup footer {
+#loginPopup footer {
     background-color: black;
     color: white;
     text-align: center;
 }
 
-#login-popup .cancel-btn a {
+#loginPopup .cancel_btn a {
     text-decoration: none;
     color: black;
 }
