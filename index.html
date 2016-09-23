@@ -2,9 +2,9 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" media="all" href="./style/home.css">
-    <link rel="stylesheet" type="text/css" href="./style/logform.css">
-    <title>home page</title>
+    <link rel="stylesheet" type="text/css" media="all" href="style/home-page.css">
+    <link rel="stylesheet" type="text/css" href="style/login-form.css">
+    <title>HOME PAGE</title>
 </head>
 
 <body>
@@ -17,9 +17,10 @@
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
-                    <button type="button" id="logoutBtn" class="hide"><a href="index.html">LogOut</a></button>
-                    <li>
-                        <button type="button" id="loginBtn"><a href="#loginPopup">LogIn</a></button>
+                    <li class="hide" id="logoutBtn">
+                       <a href="index.html">LogOut</a>                    </li>
+                    <li id="loginBtn">
+                   <a href="#loginPopup">LogIn</a>
                     </li>
                 </ul>
             </div>
@@ -27,8 +28,8 @@
         </div>
         <p id=content><strong>What do successful websites have in common?</strong></p>
         <div id="img">
-            <img id="bodyImg" src="./images/images (1).jpg" alt="main" ;>
-            <img id="bodyImg" src="./images/images (2).jpg" alt="main2" ;></div>
+            <img id="bodyImg" src="./images/images (1).jpg" alt="main">
+            <img id="bodyImg" src="./images/images (2).jpg" alt="main2"></div>
         <footer>
             <p>Everyone have something to share,</p>
             <p>to learn,</p>
@@ -40,7 +41,7 @@
             <h2>Login Form</h2>
             <form>
                 <div class="container">
-                    <a href="#" class="close_thik"></a>
+                    <a href="#" class="close_button"></a>
                     <label><b>Username</b></label>
                     <input type="text" placeholder="Enter Username" id="username" name="uname" required>
                     <label><b>Password</b></label>
